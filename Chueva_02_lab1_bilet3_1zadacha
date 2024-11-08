@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    float PI=3.14;
+    float Rad_D=5.0;
+    float Rad_I=4.0;
+    float V_D=(4.0/3.0)*PI*pow(Rad_D,3);
+    float V_I=(4.0/3.0)*PI*pow(Rad_I,3);
+    cout << "Volume of domestic egg: " << V_D  << "\n" << "Volume of incubators egg: " << V_I;
+    //Сколько инкубаторных яиц соответствует дестку домашних:
+    int s=10*(V_D/V_I);
+    cout << "\n" << "number of incubator eggs: " << s;
+    //Сколько сэкономит хозяйка, покупая десяток домашних яиц
+    cout << "\n" << "Savings: " << 19-10;
+    
+}
