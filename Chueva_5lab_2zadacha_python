@@ -1,0 +1,10 @@
+import math
+m=int(input())
+n=int(input())
+if n==0:
+    print("Знаменатель не может быть равен нулю")
+else:
+    NOD=math.gcd(m,n)
+    m=m//NOD
+    n=n//NOD
+    print(m,"/", n)
